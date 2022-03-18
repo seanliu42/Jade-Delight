@@ -270,7 +270,7 @@ function displayWindow() {
 	// Hide the delivery fields by default
 	document.querySelectorAll('p.userInfo.address').forEach(field => field.style.display = "none");
 
-	// Run the function that shows/hides the delivery fields whenver a selection is made
+	// Run the function that shows/hides the delivery fields whenever a selection is made
 	document.querySelectorAll('input[type=radio]').forEach(input => input.addEventListener("change",deliveryorPickup));
 
 	// Run the calculation functions once a quantity has been entered
